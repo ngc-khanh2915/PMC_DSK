@@ -1,0 +1,9 @@
+pandas
+google-genai
+feedparser
+trafilatura
+aiohttp
+scikit-learn
+streamlit
+plotly
+python-dotenv

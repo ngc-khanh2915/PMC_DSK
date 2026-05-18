@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: dsk_dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: always
+
+# Note: In a production environment, you might want to use separate containers 
+# for crawler and analyzer, or run them as cron jobs.
+# For local development/testing, this setup allows running the dashboard easily.
